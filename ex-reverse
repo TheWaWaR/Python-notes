@@ -31,7 +31,7 @@ text.reverse(), like many list methods, acts in-place, and therefore returns Non
 
 You should pass splitlist1 directly:
 
-********
+------
 a = '12345'
 >>> print ''.join(list(a).reverse())
 Traceback (most recent call last):
