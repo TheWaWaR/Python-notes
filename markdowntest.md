@@ -16,10 +16,10 @@ https://help.github.com/articles/github-flavored-markdown/
 
 https://help.github.com/articles/writing-on-github/
 
-# The largest heading (an <h1> tag)
-## The second largest heading (an <h2> tag)
+
+## The second largest heading 
 …
-###### The 6th largest heading (an <h6> tag)
+###### The 6th largest heading 
 
 In the words of Abraham Lincoln:
 
