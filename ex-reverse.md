@@ -1,59 +1,64 @@
-# Python-Learning
-notes on python-learning
-###Define a function called reverse that takes a string textand returns that string in reverse.
+### Python-Learning   -notes on python-learning
+Define a function called reverse that takes a string textand returns that string in reverse.
 
 For example: reverse("abcd") should return "dcba".
 
 You may not use reversed or [::-1] to help you with this.
 You may get a string containing special characters (for example, !, @, or #).###
 
-No.1
+#####No.1
+```
 def reverse(text):
     L=list(text)
     L.reverse()
     L=''.join(L)
     return L
-    
-No.2
-text[::-1]
+```
+#####No.2
+`text[::-1]`
 
 *******
-"Can only iterable" Python error
-...
+######"Can only iterable" Python error
+```
 list = text.reverse()
 reve= ' '.join(list)
+```
 ----------
 error:
     reve = ' '.join(list)
-TypeError: can only join an iterable
+`TypeError: can only join an iterable`
 
-text.reverse(), like many list methods, acts in-place, and therefore returns None. So tobereversedlist1 is therefore None, hence the error.
-
+######text.reverse(), like many list methods, acts in-place, and therefore returns None.
+So tobereversedlist1 is therefore None, hence the error.
 You should pass splitlist1 directly:
 
 ------
+```
 a = '12345'
->>> print ''.join(list(a).reverse())
+print ''.join(list(a).reverse())
+```
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: can only join an iterable
+`TypeError: can only join an iterable`
 
+```
 a = '12345'
->>> L=list(a)
->>> L.reverse()
->>> ''.join(L)
+L=list(a)
+L.reverse()
+''.join(L)
 '54321'
+```
 
->>> def sss4():
- w = 'sdfghj'
- j = len(w)
- n = []
- for i in range(j):
-  s = w[i]
-  n.append(s)
-  if i == j-1:
-   n.reverse()
-   print n
+```
+def number4(text):
+    n = len(text)
+    j = []
+    for i in range(n):
+        s = text[i]
+        j.append(s)
+        if i == j-1:
+            n.reverse()
+    print n
 
 >>> sss4()
 ['j', 'h', 'g', 'f', 'd', 's']
