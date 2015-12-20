@@ -1,0 +1,6 @@
+names=["Ai","Bi"]
+age=[19,20]
+for i in range(len(names)):
+    print names[i],'is',age[i],'years old'
+Ai is 19 years old
+Bi is 20 years old
