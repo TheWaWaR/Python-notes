@@ -1,0 +1,47 @@
+def censor(text,word):
+    print text
+    text=text.split()
+    print text
+    text = ['*'*len(word) if c == word else c for c in text]
+    print text
+    text1=" ".join(text)
+    print text1
+    return text1
+
+Have you been a fool,you fool
+['Have', 'you', 'been', 'a', 'fool,you', 'fool']
+['Have', 'you', 'been', 'a', 'fool,you', '****']
+fool
+Have you been a fool,you ****
+result= Have you been a fool,you ****
+---------------------------------------------------------------------------
+AssertionError                            Traceback (most recent call last)
+<ipython-input-69-530ff9125c19> in <module>()
+     13 result = censor("Have you been a fool,you fool","fool")
+     14 print 'result=', result
+---> 15 assert result == 'Have you been a ****,you ****', 'Result error'
+
+AssertionError: Result error
+
+
+
+result = censor("Have you been a fool,you fool","fool")
+print 'result=', result
+assert result == 'Have you been a ****,you ****', 'Result error'
+
+help(''.split)
+print 'a  b c def ghi'.split()
+print 'a  b c def ghi'.split('b')
+Help on built-in function split:
+
+split(...)
+    S.split([sep [,maxsplit]]) -> list of strings
+    
+    Return a list of the words in the string S, using sep as the
+    delimiter string.  If maxsplit is given, at most maxsplit
+    splits are done. If sep is not specified or is None, any
+    whitespace string is a separator and empty strings are removed
+    from the result.
+
+['a', 'b', 'c', 'def', 'ghi']
+['a  ', ' c def ghi']
